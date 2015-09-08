@@ -23,22 +23,21 @@
                                     <constraint firstAttribute="height" constant="128" id="VT4-Bd-lgY"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3e-Cz-daI">
-                                <rect key="frame" x="279" y="256" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="0XM-Yk-OOE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59p-3k-wuc">
+                                <rect key="frame" x="180" y="306" width="240" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Jwi-pp-1PC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="126" id="PqN-4h-a4M"/>
-                            <constraint firstItem="A3e-Cz-daI" firstAttribute="centerX" secondItem="Jwi-pp-1PC" secondAttribute="centerX" id="QXm-nW-oe5"/>
-                            <constraint firstItem="A3e-Cz-daI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dBo-hb-o8H"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A3e-Cz-daI" secondAttribute="bottom" constant="147" id="zDA-Yh-NJe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="59p-3k-wuc" secondAttribute="bottom" constant="166" id="TJ1-SH-fKW"/>
+                            <constraint firstItem="59p-3k-wuc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XuQ-Kp-fhp"/>
+                            <constraint firstItem="59p-3k-wuc" firstAttribute="top" secondItem="Jwi-pp-1PC" secondAttribute="bottom" constant="93" id="bLQ-9X-KAc"/>
+                            <constraint firstItem="59p-3k-wuc" firstAttribute="trailing" secondItem="Jwi-pp-1PC" secondAttribute="trailing" id="bPT-R4-BXH"/>
+                            <constraint firstItem="59p-3k-wuc" firstAttribute="leading" secondItem="Jwi-pp-1PC" secondAttribute="leading" id="v0b-j9-kvs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jwU-Ta-2n4">
@@ -49,7 +48,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descLabel" destination="A3e-Cz-daI" id="St2-qp-gO4"/>
+                        <outlet property="descView" destination="59p-3k-wuc" id="lka-eM-mZI"/>
                         <outlet property="imageView" destination="Jwi-pp-1PC" id="aeu-df-ApV"/>
                     </connections>
                 </viewController>

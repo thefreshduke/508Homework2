@@ -199,6 +199,11 @@ class ClassRosterTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("ClassRosterProtoCell", forIndexPath: indexPath) as! UITableViewCell
         let tempClassRosterItem: ClassRosterItem = self.classRosterItems[indexPath.row]
         cell.textLabel?.text = tempClassRosterItem.studentName
+        cell.accessoryType = UITableViewCellAccessoryType.None
+        cell.textLabel?.textColor = UIColor.blackColor()
+        cell.textLabel?.textAlignment = .Left
+        cell.textLabel?.font = UIFont(name: "HelveticaNueue", size: CGFloat(40))
+        cell.backgroundColor = UIColor.whiteColor()
         if (tempClassRosterItem.studentViewed) {
             let newString = tempClassRosterItem.studentName + " (viewed)"
             cell.textLabel?.text = newString
@@ -301,7 +306,7 @@ class ClassRosterTableViewController: UITableViewController {
             }
         }
         
-        var personGender : String = "M"
+        var personGender : String = "F"
         var personLocation : String = "China"
         var personDegree : String = ""
         var personLanguages : String = ""
@@ -316,12 +321,10 @@ class ClassRosterTableViewController: UITableViewController {
             
             if studentName == personName {
                 
-                personFound = true
-                
                 var femaleFound : Bool = false
                 
                 for i in 0...(females.count - 1) {
-                    if contains(females, studentName) {
+                    if contains(females, personName) {
                         femaleFound = true
                     }
                 }
@@ -329,7 +332,7 @@ class ClassRosterTableViewController: UITableViewController {
                 personGender = (femaleFound ? "F" : "M")
                 
                 for (key, value) in studentLocations {
-                    if studentName == key {
+                    if personName == key {
                         personLocation = value
                         break
                     }
@@ -340,7 +343,7 @@ class ClassRosterTableViewController: UITableViewController {
                 
                 while (!degreeFound) {
                     for (key, value) in studentDegrees {
-                        if studentName == key {
+                        if personName == key {
                             personDegree = value
                             degreeFound = true
                         }
@@ -351,7 +354,7 @@ class ClassRosterTableViewController: UITableViewController {
                 personLanguages = "C, Python"
                 
                 for (key, value) in studentLanguages {
-                    if studentName == key {
+                    if personName == key {
                         personLanguages = value
                     }
                 }
@@ -422,29 +425,28 @@ class ClassRosterTableViewController: UITableViewController {
                 }
                 
                 for (key, value) in studentIdeas {
-                    if studentName == key {
+                    if personName == key {
                         personIdea = value
                         break
                     }
                 }
                 
                 for (key, value) in studentJobs {
-                    if studentName == key {
+                    if personName == key {
                         personJob = value
                         break
                     }
                 }
             }
             
-            var nameString = "Name: " + personName
-            var genderString = "\nGender: " + personGender
-            var locationString = "\nLocation: " + personLocation
-            var degreeString = "\nDegree: " + personDegree
-            var languagesString = "\nLanguages: " + personLanguages
-            var jobString = "\nJob: " + personJob
-            var interestsString = "\nInterests: " + personInterests[0] + " and " + personInterests[1]
+            var genderString = "\n" + personGender
+            var locationString = "\n" + personLocation
+            var degreeString = "\n" + personDegree
+            var languagesString = "\n" + personLanguages
+            var jobString = "\n" + personJob
+            var interestsString = "\n" + personInterests[0] + " and " + personInterests[1]
             
-            return nameString + genderString + locationString + degreeString + languagesString + jobString + interestsString
+            return personName + genderString + locationString + degreeString + languagesString + jobString + interestsString
         }
         return "This is not the name of any current ECE 590 students."
     }
