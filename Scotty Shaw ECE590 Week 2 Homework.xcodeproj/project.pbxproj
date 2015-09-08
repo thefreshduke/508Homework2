@@ -543,6 +543,7 @@
 				6FEB326D1B9E9A8200F3D150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FEB326E1B9E9A8200F3D150 /* Build configuration list for PBXNativeTarget "Scotty Shaw ECE590 Week 2 HomeworkTests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +552,7 @@
 				6FEB32701B9E9A8200F3D150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
