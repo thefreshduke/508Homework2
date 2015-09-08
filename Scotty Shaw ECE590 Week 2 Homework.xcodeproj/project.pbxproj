@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FEB32521B9E9A8200F3D150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB32511B9E9A8200F3D150 /* AppDelegate.swift */; };
+		6FEB32541B9E9A8200F3D150 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB32531B9E9A8200F3D150 /* ViewController.swift */; };
+		6FEB32571B9E9A8200F3D150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32551B9E9A8200F3D150 /* Main.storyboard */; };
+		6FEB32591B9E9A8200F3D150 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32581B9E9A8200F3D150 /* Images.xcassets */; };
+		6FEB325C1B9E9A8200F3D150 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB325A1B9E9A8200F3D150 /* LaunchScreen.xib */; };
+		6FEB32681B9E9A8200F3D150 /* Scotty_Shaw_ECE590_Week_2_HomeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB32671B9E9A8200F3D150 /* Scotty_Shaw_ECE590_Week_2_HomeworkTests.swift */; };
+		6FEB328F1B9E9ADD00F3D150 /* Allan Kiplagat.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32711B9E9ADD00F3D150 /* Allan Kiplagat.JPG */; };
+		6FEB32901B9E9ADD00F3D150 /* Ashwin Kommajesula.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32721B9E9ADD00F3D150 /* Ashwin Kommajesula.JPG */; };
+		6FEB32911B9E9ADD00F3D150 /* Austin Kyker.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32731B9E9ADD00F3D150 /* Austin Kyker.JPG */; };
+		6FEB32921B9E9ADD00F3D150 /* Boyang Xu.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32741B9E9ADD00F3D150 /* Boyang Xu.JPG */; };
+		6FEB32931B9E9ADD00F3D150 /* Chase Malik.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32751B9E9ADD00F3D150 /* Chase Malik.JPG */; };
+		6FEB32941B9E9ADD00F3D150 /* Deyu Jiao.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32761B9E9ADD00F3D150 /* Deyu Jiao.JPG */; };
+		6FEB32951B9E9ADD00F3D150 /* Emmanuel Shiferaw.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32771B9E9ADD00F3D150 /* Emmanuel Shiferaw.JPG */; };
+		6FEB32961B9E9ADD00F3D150 /* Greg McKeon.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32781B9E9ADD00F3D150 /* Greg McKeon.JPG */; };
+		6FEB32971B9E9ADD00F3D150 /* Guoshan Liu.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32791B9E9ADD00F3D150 /* Guoshan Liu.JPG */; };
+		6FEB32981B9E9ADD00F3D150 /* Hao Li.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB327A1B9E9ADD00F3D150 /* Hao Li.JPG */; };
+		6FEB32991B9E9ADD00F3D150 /* Hao Wu.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB327B1B9E9ADD00F3D150 /* Hao Wu.JPG */; };
+		6FEB329A1B9E9ADD00F3D150 /* Hong Jin.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB327C1B9E9ADD00F3D150 /* Hong Jin.JPG */; };
+		6FEB329B1B9E9ADD00F3D150 /* Jiancheng Li.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB327D1B9E9ADD00F3D150 /* Jiancheng Li.JPG */; };
+		6FEB329C1B9E9ADD00F3D150 /* Jingxiong Huang.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB327E1B9E9ADD00F3D150 /* Jingxiong Huang.JPG */; };
+		6FEB329D1B9E9ADD00F3D150 /* Julien Mansier.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB327F1B9E9ADD00F3D150 /* Julien Mansier.JPG */; };
+		6FEB329E1B9E9ADD00F3D150 /* Mingming Lu.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32801B9E9ADD00F3D150 /* Mingming Lu.JPG */; };
+		6FEB329F1B9E9ADD00F3D150 /* Rahul Harikrishnan.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32811B9E9ADD00F3D150 /* Rahul Harikrishnan.JPG */; };
+		6FEB32A01B9E9ADD00F3D150 /* Ran Zhou.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32821B9E9ADD00F3D150 /* Ran Zhou.JPG */; };
+		6FEB32A11B9E9ADD00F3D150 /* Scotty Shaw.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32831B9E9ADD00F3D150 /* Scotty Shaw.JPG */; };
+		6FEB32A21B9E9ADD00F3D150 /* Shaoyi Han.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32841B9E9ADD00F3D150 /* Shaoyi Han.JPG */; };
+		6FEB32A31B9E9ADD00F3D150 /* Shuai Fu.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32851B9E9ADD00F3D150 /* Shuai Fu.JPG */; };
+		6FEB32A41B9E9ADD00F3D150 /* Shuai Yuan.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32861B9E9ADD00F3D150 /* Shuai Yuan.JPG */; };
+		6FEB32A51B9E9ADD00F3D150 /* TC Dong.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32871B9E9ADD00F3D150 /* TC Dong.JPG */; };
+		6FEB32A61B9E9ADD00F3D150 /* Weichen Ning.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32881B9E9ADD00F3D150 /* Weichen Ning.JPG */; };
+		6FEB32A71B9E9ADD00F3D150 /* Weidong Duan.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32891B9E9ADD00F3D150 /* Weidong Duan.JPG */; };
+		6FEB32A81B9E9ADD00F3D150 /* Weiqi Wei.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB328A1B9E9ADD00F3D150 /* Weiqi Wei.JPG */; };
+		6FEB32A91B9E9ADD00F3D150 /* Wenting Hu.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB328B1B9E9ADD00F3D150 /* Wenting Hu.JPG */; };
+		6FEB32AA1B9E9ADD00F3D150 /* Xin Lu.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB328C1B9E9ADD00F3D150 /* Xin Lu.JPG */; };
+		6FEB32AB1B9E9ADD00F3D150 /* Zachary Podbela.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB328D1B9E9ADD00F3D150 /* Zachary Podbela.JPG */; };
+		6FEB32AC1B9E9ADD00F3D150 /* Zhuo Jia.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB328E1B9E9ADD00F3D150 /* Zhuo Jia.JPG */; };
+		6FEB32B81B9EABE000F3D150 /* ClassRosterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB32B71B9EABE000F3D150 /* ClassRosterTableViewController.swift */; };
+		6FEB32BA1B9EAC0000F3D150 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB32B91B9EAC0000F3D150 /* StudentViewController.swift */; };
+		6FEB32BC1B9EAC4C00F3D150 /* ClassRosterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB32BB1B9EAC4C00F3D150 /* ClassRosterItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FEB32621B9E9A8200F3D150 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEB32441B9E9A8200F3D150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FEB324B1B9E9A8200F3D150;
+			remoteInfo = "Scotty Shaw ECE590 Week 2 Homework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6FEB324C1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scotty Shaw ECE590 Week 2 Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEB32501B9E9A8200F3D150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FEB32511B9E9A8200F3D150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FEB32531B9E9A8200F3D150 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FEB32561B9E9A8200F3D150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FEB32581B9E9A8200F3D150 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6FEB325B1B9E9A8200F3D150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6FEB32611B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 HomeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scotty Shaw ECE590 Week 2 HomeworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEB32661B9E9A8200F3D150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FEB32671B9E9A8200F3D150 /* Scotty_Shaw_ECE590_Week_2_HomeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scotty_Shaw_ECE590_Week_2_HomeworkTests.swift; sourceTree = "<group>"; };
+		6FEB32711B9E9ADD00F3D150 /* Allan Kiplagat.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Allan Kiplagat.JPG"; path = "../../../Student .JPGs/Allan Kiplagat.JPG"; sourceTree = "<group>"; };
+		6FEB32721B9E9ADD00F3D150 /* Ashwin Kommajesula.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Ashwin Kommajesula.JPG"; path = "../../../Student .JPGs/Ashwin Kommajesula.JPG"; sourceTree = "<group>"; };
+		6FEB32731B9E9ADD00F3D150 /* Austin Kyker.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Austin Kyker.JPG"; path = "../../../Student .JPGs/Austin Kyker.JPG"; sourceTree = "<group>"; };
+		6FEB32741B9E9ADD00F3D150 /* Boyang Xu.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Boyang Xu.JPG"; path = "../../../Student .JPGs/Boyang Xu.JPG"; sourceTree = "<group>"; };
+		6FEB32751B9E9ADD00F3D150 /* Chase Malik.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Chase Malik.JPG"; path = "../../../Student .JPGs/Chase Malik.JPG"; sourceTree = "<group>"; };
+		6FEB32761B9E9ADD00F3D150 /* Deyu Jiao.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Deyu Jiao.JPG"; path = "../../../Student .JPGs/Deyu Jiao.JPG"; sourceTree = "<group>"; };
+		6FEB32771B9E9ADD00F3D150 /* Emmanuel Shiferaw.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Emmanuel Shiferaw.JPG"; path = "../../../Student .JPGs/Emmanuel Shiferaw.JPG"; sourceTree = "<group>"; };
+		6FEB32781B9E9ADD00F3D150 /* Greg McKeon.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Greg McKeon.JPG"; path = "../../../Student .JPGs/Greg McKeon.JPG"; sourceTree = "<group>"; };
+		6FEB32791B9E9ADD00F3D150 /* Guoshan Liu.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Guoshan Liu.JPG"; path = "../../../Student .JPGs/Guoshan Liu.JPG"; sourceTree = "<group>"; };
+		6FEB327A1B9E9ADD00F3D150 /* Hao Li.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Hao Li.JPG"; path = "../../../Student .JPGs/Hao Li.JPG"; sourceTree = "<group>"; };
+		6FEB327B1B9E9ADD00F3D150 /* Hao Wu.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Hao Wu.JPG"; path = "../../../Student .JPGs/Hao Wu.JPG"; sourceTree = "<group>"; };
+		6FEB327C1B9E9ADD00F3D150 /* Hong Jin.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Hong Jin.JPG"; path = "../../../Student .JPGs/Hong Jin.JPG"; sourceTree = "<group>"; };
+		6FEB327D1B9E9ADD00F3D150 /* Jiancheng Li.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Jiancheng Li.JPG"; path = "../../../Student .JPGs/Jiancheng Li.JPG"; sourceTree = "<group>"; };
+		6FEB327E1B9E9ADD00F3D150 /* Jingxiong Huang.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Jingxiong Huang.JPG"; path = "../../../Student .JPGs/Jingxiong Huang.JPG"; sourceTree = "<group>"; };
+		6FEB327F1B9E9ADD00F3D150 /* Julien Mansier.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Julien Mansier.JPG"; path = "../../../Student .JPGs/Julien Mansier.JPG"; sourceTree = "<group>"; };
+		6FEB32801B9E9ADD00F3D150 /* Mingming Lu.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Mingming Lu.JPG"; path = "../../../Student .JPGs/Mingming Lu.JPG"; sourceTree = "<group>"; };
+		6FEB32811B9E9ADD00F3D150 /* Rahul Harikrishnan.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Rahul Harikrishnan.JPG"; path = "../../../Student .JPGs/Rahul Harikrishnan.JPG"; sourceTree = "<group>"; };
+		6FEB32821B9E9ADD00F3D150 /* Ran Zhou.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Ran Zhou.JPG"; path = "../../../Student .JPGs/Ran Zhou.JPG"; sourceTree = "<group>"; };
+		6FEB32831B9E9ADD00F3D150 /* Scotty Shaw.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Scotty Shaw.JPG"; path = "../../../Student .JPGs/Scotty Shaw.JPG"; sourceTree = "<group>"; };
+		6FEB32841B9E9ADD00F3D150 /* Shaoyi Han.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Shaoyi Han.JPG"; path = "../../../Student .JPGs/Shaoyi Han.JPG"; sourceTree = "<group>"; };
+		6FEB32851B9E9ADD00F3D150 /* Shuai Fu.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Shuai Fu.JPG"; path = "../../../Student .JPGs/Shuai Fu.JPG"; sourceTree = "<group>"; };
+		6FEB32861B9E9ADD00F3D150 /* Shuai Yuan.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Shuai Yuan.JPG"; path = "../../../Student .JPGs/Shuai Yuan.JPG"; sourceTree = "<group>"; };
+		6FEB32871B9E9ADD00F3D150 /* TC Dong.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "TC Dong.JPG"; path = "../../../Student .JPGs/TC Dong.JPG"; sourceTree = "<group>"; };
+		6FEB32881B9E9ADD00F3D150 /* Weichen Ning.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Weichen Ning.JPG"; path = "../../../Student .JPGs/Weichen Ning.JPG"; sourceTree = "<group>"; };
+		6FEB32891B9E9ADD00F3D150 /* Weidong Duan.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Weidong Duan.JPG"; path = "../../../Student .JPGs/Weidong Duan.JPG"; sourceTree = "<group>"; };
+		6FEB328A1B9E9ADD00F3D150 /* Weiqi Wei.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Weiqi Wei.JPG"; path = "../../../Student .JPGs/Weiqi Wei.JPG"; sourceTree = "<group>"; };
+		6FEB328B1B9E9ADD00F3D150 /* Wenting Hu.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Wenting Hu.JPG"; path = "../../../Student .JPGs/Wenting Hu.JPG"; sourceTree = "<group>"; };
+		6FEB328C1B9E9ADD00F3D150 /* Xin Lu.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Xin Lu.JPG"; path = "../../../Student .JPGs/Xin Lu.JPG"; sourceTree = "<group>"; };
+		6FEB328D1B9E9ADD00F3D150 /* Zachary Podbela.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Zachary Podbela.JPG"; path = "../../../Student .JPGs/Zachary Podbela.JPG"; sourceTree = "<group>"; };
+		6FEB328E1B9E9ADD00F3D150 /* Zhuo Jia.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Zhuo Jia.JPG"; path = "../../../Student .JPGs/Zhuo Jia.JPG"; sourceTree = "<group>"; };
+		6FEB32B71B9EABE000F3D150 /* ClassRosterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassRosterTableViewController.swift; sourceTree = "<group>"; };
+		6FEB32B91B9EAC0000F3D150 /* StudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		6FEB32BB1B9EAC4C00F3D150 /* ClassRosterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassRosterItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FEB32491B9E9A8200F3D150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEB325E1B9E9A8200F3D150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FEB32431B9E9A8200F3D150 = {
+			isa = PBXGroup;
+			children = (
+				6FEB324E1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework */,
+				6FEB32641B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 HomeworkTests */,
+				6FEB324D1B9E9A8200F3D150 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FEB324D1B9E9A8200F3D150 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FEB324C1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework.app */,
+				6FEB32611B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 HomeworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FEB324E1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework */ = {
+			isa = PBXGroup;
+			children = (
+				6FEB32511B9E9A8200F3D150 /* AppDelegate.swift */,
+				6FEB32531B9E9A8200F3D150 /* ViewController.swift */,
+				6FEB32551B9E9A8200F3D150 /* Main.storyboard */,
+				6FEB32B71B9EABE000F3D150 /* ClassRosterTableViewController.swift */,
+				6FEB32BB1B9EAC4C00F3D150 /* ClassRosterItem.swift */,
+				6FEB32B91B9EAC0000F3D150 /* StudentViewController.swift */,
+				6FEB32581B9E9A8200F3D150 /* Images.xcassets */,
+				6FEB325A1B9E9A8200F3D150 /* LaunchScreen.xib */,
+				6FEB324F1B9E9A8200F3D150 /* Supporting Files */,
+			);
+			path = "Scotty Shaw ECE590 Week 2 Homework";
+			sourceTree = "<group>";
+		};
+		6FEB324F1B9E9A8200F3D150 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FEB32711B9E9ADD00F3D150 /* Allan Kiplagat.JPG */,
+				6FEB32721B9E9ADD00F3D150 /* Ashwin Kommajesula.JPG */,
+				6FEB32731B9E9ADD00F3D150 /* Austin Kyker.JPG */,
+				6FEB32741B9E9ADD00F3D150 /* Boyang Xu.JPG */,
+				6FEB32751B9E9ADD00F3D150 /* Chase Malik.JPG */,
+				6FEB32761B9E9ADD00F3D150 /* Deyu Jiao.JPG */,
+				6FEB32771B9E9ADD00F3D150 /* Emmanuel Shiferaw.JPG */,
+				6FEB32781B9E9ADD00F3D150 /* Greg McKeon.JPG */,
+				6FEB32791B9E9ADD00F3D150 /* Guoshan Liu.JPG */,
+				6FEB327A1B9E9ADD00F3D150 /* Hao Li.JPG */,
+				6FEB327B1B9E9ADD00F3D150 /* Hao Wu.JPG */,
+				6FEB327C1B9E9ADD00F3D150 /* Hong Jin.JPG */,
+				6FEB327D1B9E9ADD00F3D150 /* Jiancheng Li.JPG */,
+				6FEB327E1B9E9ADD00F3D150 /* Jingxiong Huang.JPG */,
+				6FEB327F1B9E9ADD00F3D150 /* Julien Mansier.JPG */,
+				6FEB32801B9E9ADD00F3D150 /* Mingming Lu.JPG */,
+				6FEB32811B9E9ADD00F3D150 /* Rahul Harikrishnan.JPG */,
+				6FEB32821B9E9ADD00F3D150 /* Ran Zhou.JPG */,
+				6FEB32831B9E9ADD00F3D150 /* Scotty Shaw.JPG */,
+				6FEB32841B9E9ADD00F3D150 /* Shaoyi Han.JPG */,
+				6FEB32851B9E9ADD00F3D150 /* Shuai Fu.JPG */,
+				6FEB32861B9E9ADD00F3D150 /* Shuai Yuan.JPG */,
+				6FEB32871B9E9ADD00F3D150 /* TC Dong.JPG */,
+				6FEB32881B9E9ADD00F3D150 /* Weichen Ning.JPG */,
+				6FEB32891B9E9ADD00F3D150 /* Weidong Duan.JPG */,
+				6FEB328A1B9E9ADD00F3D150 /* Weiqi Wei.JPG */,
+				6FEB328B1B9E9ADD00F3D150 /* Wenting Hu.JPG */,
+				6FEB328C1B9E9ADD00F3D150 /* Xin Lu.JPG */,
+				6FEB328D1B9E9ADD00F3D150 /* Zachary Podbela.JPG */,
+				6FEB328E1B9E9ADD00F3D150 /* Zhuo Jia.JPG */,
+				6FEB32501B9E9A8200F3D150 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FEB32641B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 HomeworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FEB32671B9E9A8200F3D150 /* Scotty_Shaw_ECE590_Week_2_HomeworkTests.swift */,
+				6FEB32651B9E9A8200F3D150 /* Supporting Files */,
+			);
+			path = "Scotty Shaw ECE590 Week 2 HomeworkTests";
+			sourceTree = "<group>";
+		};
+		6FEB32651B9E9A8200F3D150 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FEB32661B9E9A8200F3D150 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FEB324B1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FEB326B1B9E9A8200F3D150 /* Build configuration list for PBXNativeTarget "Scotty Shaw ECE590 Week 2 Homework" */;
+			buildPhases = (
+				6FEB32481B9E9A8200F3D150 /* Sources */,
+				6FEB32491B9E9A8200F3D150 /* Frameworks */,
+				6FEB324A1B9E9A8200F3D150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scotty Shaw ECE590 Week 2 Homework";
+			productName = "Scotty Shaw ECE590 Week 2 Homework";
+			productReference = 6FEB324C1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FEB32601B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 HomeworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FEB326E1B9E9A8200F3D150 /* Build configuration list for PBXNativeTarget "Scotty Shaw ECE590 Week 2 HomeworkTests" */;
+			buildPhases = (
+				6FEB325D1B9E9A8200F3D150 /* Sources */,
+				6FEB325E1B9E9A8200F3D150 /* Frameworks */,
+				6FEB325F1B9E9A8200F3D150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FEB32631B9E9A8200F3D150 /* PBXTargetDependency */,
+			);
+			name = "Scotty Shaw ECE590 Week 2 HomeworkTests";
+			productName = "Scotty Shaw ECE590 Week 2 HomeworkTests";
+			productReference = 6FEB32611B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 HomeworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FEB32441B9E9A8200F3D150 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "___sks6___";
+				TargetAttributes = {
+					6FEB324B1B9E9A8200F3D150 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6FEB32601B9E9A8200F3D150 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6FEB324B1B9E9A8200F3D150;
+					};
+				};
+			};
+			buildConfigurationList = 6FEB32471B9E9A8200F3D150 /* Build configuration list for PBXProject "Scotty Shaw ECE590 Week 2 Homework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FEB32431B9E9A8200F3D150;
+			productRefGroup = 6FEB324D1B9E9A8200F3D150 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FEB324B1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework */,
+				6FEB32601B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 HomeworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FEB324A1B9E9A8200F3D150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FEB32A01B9E9ADD00F3D150 /* Ran Zhou.JPG in Resources */,
+				6FEB32931B9E9ADD00F3D150 /* Chase Malik.JPG in Resources */,
+				6FEB32981B9E9ADD00F3D150 /* Hao Li.JPG in Resources */,
+				6FEB32971B9E9ADD00F3D150 /* Guoshan Liu.JPG in Resources */,
+				6FEB329D1B9E9ADD00F3D150 /* Julien Mansier.JPG in Resources */,
+				6FEB32A51B9E9ADD00F3D150 /* TC Dong.JPG in Resources */,
+				6FEB32961B9E9ADD00F3D150 /* Greg McKeon.JPG in Resources */,
+				6FEB32AC1B9E9ADD00F3D150 /* Zhuo Jia.JPG in Resources */,
+				6FEB32571B9E9A8200F3D150 /* Main.storyboard in Resources */,
+				6FEB32A71B9E9ADD00F3D150 /* Weidong Duan.JPG in Resources */,
+				6FEB32991B9E9ADD00F3D150 /* Hao Wu.JPG in Resources */,
+				6FEB329F1B9E9ADD00F3D150 /* Rahul Harikrishnan.JPG in Resources */,
+				6FEB32AB1B9E9ADD00F3D150 /* Zachary Podbela.JPG in Resources */,
+				6FEB32A21B9E9ADD00F3D150 /* Shaoyi Han.JPG in Resources */,
+				6FEB32A11B9E9ADD00F3D150 /* Scotty Shaw.JPG in Resources */,
+				6FEB32911B9E9ADD00F3D150 /* Austin Kyker.JPG in Resources */,
+				6FEB325C1B9E9A8200F3D150 /* LaunchScreen.xib in Resources */,
+				6FEB32A41B9E9ADD00F3D150 /* Shuai Yuan.JPG in Resources */,
+				6FEB32A81B9E9ADD00F3D150 /* Weiqi Wei.JPG in Resources */,
+				6FEB32A61B9E9ADD00F3D150 /* Weichen Ning.JPG in Resources */,
+				6FEB32AA1B9E9ADD00F3D150 /* Xin Lu.JPG in Resources */,
+				6FEB328F1B9E9ADD00F3D150 /* Allan Kiplagat.JPG in Resources */,
+				6FEB329A1B9E9ADD00F3D150 /* Hong Jin.JPG in Resources */,
+				6FEB32921B9E9ADD00F3D150 /* Boyang Xu.JPG in Resources */,
+				6FEB32A31B9E9ADD00F3D150 /* Shuai Fu.JPG in Resources */,
+				6FEB32A91B9E9ADD00F3D150 /* Wenting Hu.JPG in Resources */,
+				6FEB329B1B9E9ADD00F3D150 /* Jiancheng Li.JPG in Resources */,
+				6FEB32591B9E9A8200F3D150 /* Images.xcassets in Resources */,
+				6FEB32901B9E9ADD00F3D150 /* Ashwin Kommajesula.JPG in Resources */,
+				6FEB329C1B9E9ADD00F3D150 /* Jingxiong Huang.JPG in Resources */,
+				6FEB32941B9E9ADD00F3D150 /* Deyu Jiao.JPG in Resources */,
+				6FEB32951B9E9ADD00F3D150 /* Emmanuel Shiferaw.JPG in Resources */,
+				6FEB329E1B9E9ADD00F3D150 /* Mingming Lu.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEB325F1B9E9A8200F3D150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FEB32481B9E9A8200F3D150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FEB32BA1B9EAC0000F3D150 /* StudentViewController.swift in Sources */,
+				6FEB32B81B9EABE000F3D150 /* ClassRosterTableViewController.swift in Sources */,
+				6FEB32BC1B9EAC4C00F3D150 /* ClassRosterItem.swift in Sources */,
+				6FEB32541B9E9A8200F3D150 /* ViewController.swift in Sources */,
+				6FEB32521B9E9A8200F3D150 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEB325D1B9E9A8200F3D150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FEB32681B9E9A8200F3D150 /* Scotty_Shaw_ECE590_Week_2_HomeworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FEB32631B9E9A8200F3D150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FEB324B1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework */;
+			targetProxy = 6FEB32621B9E9A8200F3D150 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FEB32551B9E9A8200F3D150 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FEB32561B9E9A8200F3D150 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FEB325A1B9E9A8200F3D150 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FEB325B1B9E9A8200F3D150 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FEB32691B9E9A8200F3D150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FEB326A1B9E9A8200F3D150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FEB326C1B9E9A8200F3D150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Scotty Shaw ECE590 Week 2 Homework/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6FEB326D1B9E9A8200F3D150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Scotty Shaw ECE590 Week 2 Homework/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6FEB326F1B9E9A8200F3D150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Scotty Shaw ECE590 Week 2 HomeworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scotty Shaw ECE590 Week 2 Homework.app/Scotty Shaw ECE590 Week 2 Homework";
+			};
+			name = Debug;
+		};
+		6FEB32701B9E9A8200F3D150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Scotty Shaw ECE590 Week 2 HomeworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scotty Shaw ECE590 Week 2 Homework.app/Scotty Shaw ECE590 Week 2 Homework";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FEB32471B9E9A8200F3D150 /* Build configuration list for PBXProject "Scotty Shaw ECE590 Week 2 Homework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEB32691B9E9A8200F3D150 /* Debug */,
+				6FEB326A1B9E9A8200F3D150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FEB326B1B9E9A8200F3D150 /* Build configuration list for PBXNativeTarget "Scotty Shaw ECE590 Week 2 Homework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEB326C1B9E9A8200F3D150 /* Debug */,
+				6FEB326D1B9E9A8200F3D150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6FEB326E1B9E9A8200F3D150 /* Build configuration list for PBXNativeTarget "Scotty Shaw ECE590 Week 2 HomeworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEB326F1B9E9A8200F3D150 /* Debug */,
+				6FEB32701B9E9A8200F3D150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FEB32441B9E9A8200F3D150 /* Project object */;
+}
