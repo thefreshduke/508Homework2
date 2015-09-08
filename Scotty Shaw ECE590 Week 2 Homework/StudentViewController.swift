@@ -9,10 +9,19 @@
 import UIKit
 
 class StudentViewController: UIViewController {
+    
+    var classRosterItem = ClassRosterItem()
+    
+    var selectedPicture = 0
+    
+    @IBOutlet weak var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var fileName = self.classRosterItem.studentPic
+        println(fileName)
+        var nextImage = UIImage(named: fileName)
+        imageView.image = nextImage
         // Do any additional setup after loading the view.
     }
 

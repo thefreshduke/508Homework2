@@ -11,6 +11,8 @@ import UIKit
 class ClassRosterTableViewController: UITableViewController {
     
     var classRosterItems = [ClassRosterItem]()
+    
+    var studentViewController = StudentViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,7 @@ class ClassRosterTableViewController: UITableViewController {
     }
     
     @IBAction func unwindToList (segue: UIStoryboardSegue) {
-        
+        self.tableView.reloadData()
     }
     
     func loadInitialData() {
@@ -64,9 +66,11 @@ class ClassRosterTableViewController: UITableViewController {
             "Boyang Xu",
             "Shuai Yuan",
             "Ran Zhou"]
+        
         for student in students {
             var item = ClassRosterItem()
             item.studentName = student
+            item.studentPic = "\(student).JPG"
             self.classRosterItems.append(item)
         }
     }
@@ -88,7 +92,13 @@ class ClassRosterTableViewController: UITableViewController {
         let tempClassRosterItem: ClassRosterItem = self.classRosterItems[indexPath.row]
         cell.textLabel?.text = tempClassRosterItem.studentName
         if (tempClassRosterItem.studentViewed) {
+            let newString = tempClassRosterItem.studentName + " (viewed)"
+            cell.textLabel?.text = newString
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            cell.textLabel?.textColor = UIColor.purpleColor()
+            cell.textLabel?.textAlignment = .Right
+            cell.textLabel?.font = UIFont(name: "CourierNewPS-BoldItalicMT", size: CGFloat(20))
+            cell.backgroundColor = UIColor.yellowColor()
         }
         return cell
     }
@@ -96,8 +106,18 @@ class ClassRosterTableViewController: UITableViewController {
     override func tableView (tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
         let tappedItem: ClassRosterItem = self.classRosterItems[indexPath.row]
+        studentViewController.classRosterItem.studentPic = tappedItem.studentPic
         tappedItem.studentViewed = true
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
+        studentViewController.classRosterItem = tappedItem
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        let studentDisplayNavigationController = segue.destinationViewController as! UINavigationController
+        studentViewController = studentDisplayNavigationController.topViewController as! StudentViewController
     }
 
     /*
@@ -148,11 +168,5 @@ class ClassRosterTableViewController: UITableViewController {
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
     */
-
 }
