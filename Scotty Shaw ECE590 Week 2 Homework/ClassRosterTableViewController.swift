@@ -71,6 +71,7 @@ class ClassRosterTableViewController: UITableViewController {
             var item = ClassRosterItem()
             item.studentName = student
             item.studentPic = "\(student).JPG"
+            item.studentDesc = "\(student)"
             self.classRosterItems.append(item)
         }
     }

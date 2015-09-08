@@ -15,13 +15,17 @@ class StudentViewController: UIViewController {
     var selectedPicture = 0
     
     @IBOutlet weak var imageView: UIImageView!
-
+    
+    @IBOutlet weak var descLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var fileName = self.classRosterItem.studentPic
-        println(fileName)
-        var nextImage = UIImage(named: fileName)
+        var picName = self.classRosterItem.studentPic
+        var nextImage = UIImage(named: picName)
         imageView.image = nextImage
+        var desc = self.classRosterItem.studentDesc
+        descLabel.text = desc
+        self.view.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 235/255, alpha: 1.0)
         // Do any additional setup after loading the view.
     }
 
