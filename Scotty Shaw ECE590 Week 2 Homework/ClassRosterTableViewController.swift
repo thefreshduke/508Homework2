@@ -33,12 +33,42 @@ class ClassRosterTableViewController: UITableViewController {
     }
     
     func loadInitialData() {
-        var item1 = ClassRosterItem()
-        item1.studentDesc = "Allan Kiplagat"
-        self.classRosterItems.append(item1)
-        var item2 = ClassRosterItem()
-        item2.studentDesc = "Ashwin Kommajesula"
-        self.classRosterItems.append(item2)
+        let students: [String] = [
+            "TC Dong",
+            "Weidong Duan",
+            "Shuai Fu",
+            "Shaoyi Han",
+            "Rahul Harikrishnan",
+            "Wenting Hu",
+            "Jingxiong Huang",
+            "Zhuo Jia",
+            "Deyu Jiao",
+            "Allan Kiplagat",
+            "Ashwin Mommajesula",
+            "Austin Kyker",
+            "Hao Li",
+            "Jiancheng Li",
+            "Guoshan Liu",
+            "Mingming Lu",
+            "Xin Lu",
+            "Hong Jin",
+            "Chase Malik",
+            "Julien Mansier",
+            "Greg McKeon",
+            "Weichen Ning",
+            "Zachary Podbela",
+            "Scotty Shaw",
+            "Emmanuel Shiferaw",
+            "Weiqi Wei",
+            "Hao Wu",
+            "Boyang Xu",
+            "Shuai Yuan",
+            "Ran Zhou"]
+        for student in students {
+            var item = ClassRosterItem()
+            item.studentName = student
+            self.classRosterItems.append(item)
+        }
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -56,7 +86,7 @@ class ClassRosterTableViewController: UITableViewController {
     override func tableView (tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ClassRosterProtoCell", forIndexPath: indexPath) as! UITableViewCell
         let tempClassRosterItem: ClassRosterItem = self.classRosterItems[indexPath.row]
-        cell.textLabel?.text = tempClassRosterItem.studentDesc
+        cell.textLabel?.text = tempClassRosterItem.studentName
         if (tempClassRosterItem.studentViewed) {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
         }

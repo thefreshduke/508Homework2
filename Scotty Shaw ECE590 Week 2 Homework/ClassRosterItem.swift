@@ -9,6 +9,7 @@
 import UIKit
 
 class ClassRosterItem: NSObject {
+    var studentName: String = ""
     var studentDesc: String = ""
     var studentPic: String = ""
     var studentViewed: Bool = false
