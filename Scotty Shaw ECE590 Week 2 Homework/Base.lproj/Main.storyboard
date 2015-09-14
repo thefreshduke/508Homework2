@@ -29,14 +29,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zro-7V-sHi">
+                                <rect key="frame" x="255" y="237" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="63k-mg-kmZ"/>
+                                </constraints>
+                                <state key="normal" title="THIS IS ME">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Jwi-pp-1PC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="126" id="PqN-4h-a4M"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="59p-3k-wuc" secondAttribute="bottom" constant="166" id="TJ1-SH-fKW"/>
                             <constraint firstItem="59p-3k-wuc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XuQ-Kp-fhp"/>
+                            <constraint firstItem="zro-7V-sHi" firstAttribute="top" secondItem="Jwi-pp-1PC" secondAttribute="bottom" constant="24" id="a16-wI-HCn"/>
                             <constraint firstItem="59p-3k-wuc" firstAttribute="top" secondItem="Jwi-pp-1PC" secondAttribute="bottom" constant="93" id="bLQ-9X-KAc"/>
                             <constraint firstItem="59p-3k-wuc" firstAttribute="trailing" secondItem="Jwi-pp-1PC" secondAttribute="trailing" id="bPT-R4-BXH"/>
+                            <constraint firstItem="zro-7V-sHi" firstAttribute="centerX" secondItem="Jwi-pp-1PC" secondAttribute="centerX" id="dGK-6t-7LJ"/>
                             <constraint firstItem="59p-3k-wuc" firstAttribute="leading" secondItem="Jwi-pp-1PC" secondAttribute="leading" id="v0b-j9-kvs"/>
                         </constraints>
                     </view>
@@ -50,6 +61,7 @@
                     <connections>
                         <outlet property="descView" destination="59p-3k-wuc" id="lka-eM-mZI"/>
                         <outlet property="imageView" destination="Jwi-pp-1PC" id="aeu-df-ApV"/>
+                        <outlet property="isMeButton" destination="zro-7V-sHi" id="GGn-vZ-Ut5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

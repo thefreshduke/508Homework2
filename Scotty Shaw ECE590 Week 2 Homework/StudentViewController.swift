@@ -18,6 +18,8 @@ class StudentViewController: UIViewController {
     
     @IBOutlet weak var descView: UITextView!
     
+    @IBOutlet weak var isMeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var picName = self.classRosterItem.studentPic
@@ -26,6 +28,12 @@ class StudentViewController: UIViewController {
         var desc = self.classRosterItem.studentDesc
         descView.text = desc
         self.view.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 235/255, alpha: 1.0)
+        if self.classRosterItem.isMe {
+            isMeButton.hidden = false
+        }
+        else {
+            isMeButton.hidden = true
+        }
         // Do any additional setup after loading the view.
     }
 

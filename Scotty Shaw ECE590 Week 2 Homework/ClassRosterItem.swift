@@ -13,4 +13,5 @@ class ClassRosterItem: NSObject {
     var studentDesc: String = ""
     var studentPic: String = ""
     var studentViewed: Bool = false
+    var isMe: Bool = false
 }

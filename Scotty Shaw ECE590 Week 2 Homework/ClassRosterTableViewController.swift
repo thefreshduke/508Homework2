@@ -21,7 +21,7 @@ class ClassRosterTableViewController: UITableViewController {
         "Zhuo Jia",
         "Deyu Jiao",
         "Allan Kiplagat",
-        "Ashwin Mommajesula",
+        "Ashwin Kommajesula",
         "Austin Kyker",
         "Hao Li",
         "Jiancheng Li",
@@ -52,7 +52,7 @@ class ClassRosterTableViewController: UITableViewController {
     let studentLocations = [
         "Emmanuel Shiferaw" : "Ethiopia then North Carolina",
         "Julien Mansier" : "Florida",
-        "Ashwin Mommajesula" : "India then New Jersey",
+        "Ashwin Kommajesula" : "India then New Jersey",
         "Austin Kyker" : "Indiana",
         "Allan Kiplagat": "Kenya",
         "Chase Malik" : "Missouri",
@@ -68,7 +68,7 @@ class ClassRosterTableViewController: UITableViewController {
         "Rahul Harikrishnan" : "Bachelors in ECE",
         "Julien Mansier" : "Bachelors in ECE",
         "Allan Kiplagat" : "Bachelors in ECE and CS",
-        "Ashwin Mommajesula" : "Bachelors in ECE and CS",
+        "Ashwin Kommajesula" : "Bachelors in ECE and CS",
         "Austin Kyker" : "Bachelors in ECE and CS",
         "Greg McKeon" : "Bachelors in ECE and CS",
         "Zachary Podbela" : "Bachelors in ECE and CS",
@@ -88,7 +88,7 @@ class ClassRosterTableViewController: UITableViewController {
         "Zhuo Jia" : "C++, Java",
         "Deyu Jiao" : "Java, C++",
         "Allan Kiplagat" : "Java, Ruby",
-        "Ashwin Mommajesula" : "Java, C",
+        "Ashwin Kommajesula" : "Java, C",
         "Austin Kyker" : "JavaScript, Java",
         "Hao Li" : "C++, Java",
         "Jiancheng Li" : "C, Java",
@@ -115,7 +115,7 @@ class ClassRosterTableViewController: UITableViewController {
         "Zhuo Jia" : "Chinese start-up",
         "Deyu Jiao" : "Chinese internship involving a cloud address book",
         "Allan Kiplagat" : "Start-up",
-        "Ashwin Mommajesula" : "Quicken Loans",
+        "Ashwin Kommajesula" : "Quicken Loans",
         "Austin Kyker" : "eBay",
         "Xin Lu" : "Chinese start-up involving cloud computing",
         "Chase Malik" : "Sporting Innovation",
@@ -178,7 +178,10 @@ class ClassRosterTableViewController: UITableViewController {
             var item = ClassRosterItem()
             item.studentName = student
             item.studentPic = "\(student).JPG"
-            item.studentDesc = "\(createStudentDesc((student)))"
+            item.studentDesc = ""
+            if student == "Scotty Shaw" {
+                item.isMe = true
+            }
             self.classRosterItems.append(item)
         }
     }
@@ -205,7 +208,10 @@ class ClassRosterTableViewController: UITableViewController {
         cell.textLabel?.font = UIFont(name: "HelveticaNueue", size: CGFloat(40))
         cell.backgroundColor = UIColor.whiteColor()
         if (tempClassRosterItem.studentViewed) {
-            let newString = tempClassRosterItem.studentName + " (viewed)"
+            var newString = tempClassRosterItem.studentName + " (viewed)"
+            if tempClassRosterItem.isMe {
+                newString = newString + "muh"
+            }
             cell.textLabel?.text = newString
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
             cell.textLabel?.textColor = UIColor.purpleColor()
@@ -282,172 +288,4 @@ class ClassRosterTableViewController: UITableViewController {
     // MARK: - Navigation
     
     */
-    
-    func createStudentDesc (personName : String) -> String {
-        
-        class student {
-            var name : String
-            var gender : Character
-            var location : String
-            var degree : String
-            var languages : String
-            var interests : [String]
-            var job : String
-            var idea : String
-            init (name : String, gender : Character, location : String, degree : String, languages : String, interests : [String], job : String, idea : String) {
-                self.name = name
-                self.gender = gender
-                self.location = location
-                self.degree = degree
-                self.languages = languages
-                self.interests = interests
-                self.job = job
-                self.idea = idea
-            }
-        }
-        
-        var personGender : String = "F"
-        var personLocation : String = "China"
-        var personDegree : String = ""
-        var personLanguages : String = ""
-        var personInterests : [String] = ["", ""]
-        var personJob : String = ""
-        var personIdea : String = ""
-        
-        var personFound : Bool = false
-        var finalOutput : String = ""
-        
-        for studentName in studentNames {
-            
-            if studentName == personName {
-                
-                var femaleFound : Bool = false
-                
-                for i in 0...(females.count - 1) {
-                    if contains(females, personName) {
-                        femaleFound = true
-                    }
-                }
-                
-                personGender = (femaleFound ? "F" : "M")
-                
-                for (key, value) in studentLocations {
-                    if personName == key {
-                        personLocation = value
-                        break
-                    }
-                }
-                
-                var degreeFound : Bool = false
-                personDegree = "Masters in ECE"
-                
-                while (!degreeFound) {
-                    for (key, value) in studentDegrees {
-                        if personName == key {
-                            personDegree = value
-                            degreeFound = true
-                        }
-                    }
-                    break
-                }
-                
-                personLanguages = "C, Python"
-                
-                for (key, value) in studentLanguages {
-                    if personName == key {
-                        personLanguages = value
-                    }
-                }
-                
-                let nameOfStudent: String = personName
-                
-                switch nameOfStudent {
-                case "TC Dong":
-                    personInterests = ["violin", "figure skating"]
-                case "Weidong Duan":
-                    personInterests = ["swimming", "movies"]
-                case "Shuai Fu":
-                    personInterests = ["table tennis", "piano"]
-                case "Shaoyi Han":
-                    personInterests = ["piano", "dancing"]
-                case "Rahul Harikrishnan":
-                    personInterests = ["cricket", "hiking"]
-                case "Wenting Hu":
-                    personInterests = ["piano", "computer games"]
-                case "Jingxiong Huang":
-                    personInterests = ["swimming", "mobile phone games"]
-                case "Zhuo Jia":
-                    personInterests = ["cooking", "photography"]
-                case "Deyu Jiao":
-                    personInterests = ["choir", "piano"]
-                case "Allan Kiplagat":
-                    personInterests = ["guitar", "jogging"]
-                case "Ashwin Mommajesula":
-                    personInterests = ["violin", "cooking"]
-                case "Austin Kyker":
-                    personInterests = ["basketball", "golf"]
-                case "Hao Li":
-                    personInterests = ["basketball", "movies"]
-                case "Jiancheng Li":
-                    personInterests = ["swimming", "computer games"]
-                case "Guoshan Liu":
-                    personInterests = ["piano", "music"]
-                case "Mingming Lu":
-                    personInterests = ["basketball", "working out"]
-                case "Xin Lu":
-                    personInterests = ["running", "table tennis"]
-                case "Chase Malik":
-                    personInterests = ["video games", "watching sports"]
-                case "Julien Mansier":
-                    personInterests = ["football", "brewing beer"]
-                case "Greg McKeon":
-                    personInterests = ["Netflix", "baseball"]
-                case "Weichen Ning":
-                    personInterests = ["movies", "badminton"]
-                case "Zachary Podbela":
-                    personInterests = ["music", "flying"]
-                case "Scotty Shaw":
-                    personInterests = ["basketball", "traveling"]
-                case "Emmanuel Shiferaw":
-                    personInterests = ["reading", "football"]
-                case "Weiqi Wei":
-                    personInterests = ["soccer", "table tennis"]
-                case "Hao Wu":
-                    personInterests = ["tennis", "movies"]
-                case "Boyang Xu":
-                    personInterests = ["soccer", "basketball"]
-                case "Shuai Yuan":
-                    personInterests = ["basketball", "computer games"]
-                case "Ran Zhou":
-                    personInterests = ["violin", "swimming"]
-                default:
-                    personInterests = ["none", "none"]
-                }
-                
-                for (key, value) in studentIdeas {
-                    if personName == key {
-                        personIdea = value
-                        break
-                    }
-                }
-                
-                for (key, value) in studentJobs {
-                    if personName == key {
-                        personJob = value
-                        break
-                    }
-                }
-            }
-            
-            var genderString = "\n" + personGender
-            var locationString = "\n" + personLocation
-            var degreeString = "\n" + personDegree
-            var languagesString = "\n" + personLanguages
-            var jobString = "\n" + personJob
-            var interestsString = "\n" + personInterests[0] + " and " + personInterests[1]
-            
-            return personName + genderString + locationString + degreeString + languagesString + jobString + interestsString
-        }
-        return "This is not the name of any current ECE 590 students."
-    }
 }
