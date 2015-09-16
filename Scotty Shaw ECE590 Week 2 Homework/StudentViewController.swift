@@ -14,11 +14,15 @@ class StudentViewController: UIViewController {
     
     var selectedPicture = 0
     
-    @IBOutlet weak var imageView: UIImageView!
+    var cardView: UIView!
+    var back: UIImageView!
+    var showingBack = false
     
-    @IBOutlet weak var descView: UITextView!
+    @IBOutlet var imageView: UIImageView!
     
-    @IBOutlet weak var isMeButton: UIButton!
+    @IBOutlet var descView: UITextView!
+    
+    @IBOutlet var isMeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,30 +34,36 @@ class StudentViewController: UIViewController {
         self.view.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 235/255, alpha: 1.0)
         if self.classRosterItem.isMe {
             isMeButton.hidden = false
+            
+            back = UIImageView(image: UIImage(named: ""))
+            let singleTap = UITapGestureRecognizer(target: self, action: Selector("tapped"))
+            singleTap.numberOfTapsRequired = 1
+            
+            let screenWidth = self.view.frame.size.width
+            let screenHeight = self.view.frame.size.height
+            let rect = CGRectMake((screenWidth / 2), 20, screenWidth, screenHeight)
+            cardView = UIView(frame: rect)
+            cardView.addGestureRecognizer(singleTap)
+            cardView.userInteractionEnabled = true
+            cardView.addSubview(back)
+            view.addSubview(cardView)
         }
         else {
             isMeButton.hidden = true
         }
-        // Do any additional setup after loading the view.
+    }
+    
+    func tapped() {
+        if (showingBack) {
+            UIView.transitionFromView(back, toView: imageView, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
+        }
+        else {
+            UIView.transitionFromView(imageView, toView: back, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
+        }
+        showingBack = !showingBack
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func changeScene(sender: AnyObject) {
-        println("wut")
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
