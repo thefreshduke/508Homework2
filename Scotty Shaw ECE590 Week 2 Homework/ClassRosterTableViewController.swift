@@ -10,7 +10,7 @@ import UIKit
 
 class ClassRosterTableViewController: UITableViewController {
     
-    let studentNames: [String] = [
+    let students: [String] = [
         "TC Dong",
         "Weidong Duan",
         "Shuai Fu",
@@ -42,7 +42,7 @@ class ClassRosterTableViewController: UITableViewController {
         "Shuai Yuan",
         "Ran Zhou"]
     
-    let females : [String] = [
+    let studentTraits: [String] = [
         "TC Dong",
         "Shaoyi Han",
         "Wenting Hu",
@@ -174,7 +174,7 @@ class ClassRosterTableViewController: UITableViewController {
     }
     
     func loadInitialData() {
-        for student in studentNames {
+        for student in students {
             var item = ClassRosterItem()
             item.studentName = student
             item.studentPic = "\(student).JPG"
@@ -201,17 +201,22 @@ class ClassRosterTableViewController: UITableViewController {
     override func tableView (tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ClassRosterProtoCell", forIndexPath: indexPath) as! UITableViewCell
         let tempClassRosterItem: ClassRosterItem = self.classRosterItems[indexPath.row]
-        cell.textLabel?.text = tempClassRosterItem.studentName
+        
+        var emoji = ""
+        
+        if tempClassRosterItem.isMe {
+            emoji = "\u{1F3C0}"
+        }
+        
+        var newString = emoji + " " + tempClassRosterItem.studentName + " " + emoji
+        cell.textLabel?.text = newString
         cell.accessoryType = UITableViewCellAccessoryType.None
         cell.textLabel?.textColor = UIColor.blackColor()
         cell.textLabel?.textAlignment = .Left
         cell.textLabel?.font = UIFont(name: "HelveticaNueue", size: CGFloat(40))
         cell.backgroundColor = UIColor.whiteColor()
         if (tempClassRosterItem.studentViewed) {
-            var newString = tempClassRosterItem.studentName + " (viewed)"
-            if tempClassRosterItem.isMe {
-                newString = newString + "muh"
-            }
+            newString += " (viewed)"
             cell.textLabel?.text = newString
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
             cell.textLabel?.textColor = UIColor.purpleColor()

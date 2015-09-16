@@ -41,8 +41,11 @@ class StudentViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
+    @IBAction func changeScene(sender: AnyObject) {
+        println("wut")
+    }
+    
     /*
     // MARK: - Navigation
 
