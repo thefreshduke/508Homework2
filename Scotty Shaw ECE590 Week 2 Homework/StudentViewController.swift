@@ -24,7 +24,7 @@ class StudentViewController: UIViewController {
     
     @IBOutlet var isMeButton: UIButton!
     
-    override func viewDidLoad() {
+    override func viewDidLoad () {
         super.viewDidLoad()
         var picName = self.classRosterItem.studentPic
         var nextImage = UIImage(named: picName)
@@ -34,35 +34,16 @@ class StudentViewController: UIViewController {
         self.view.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 235/255, alpha: 1.0)
         if self.classRosterItem.isMe {
             isMeButton.hidden = false
-            
-            back = UIImageView(image: UIImage(named: ""))
-            let singleTap = UITapGestureRecognizer(target: self, action: Selector("tapped"))
-            singleTap.numberOfTapsRequired = 1
-            
-            let screenWidth = self.view.frame.size.width
-            let screenHeight = self.view.frame.size.height
-            let rect = CGRectMake((screenWidth / 2), 20, screenWidth, screenHeight)
-            cardView = UIView(frame: rect)
-            cardView.addGestureRecognizer(singleTap)
-            cardView.userInteractionEnabled = true
-            cardView.addSubview(back)
-            view.addSubview(cardView)
         }
         else {
             isMeButton.hidden = true
         }
     }
     
-    func tapped() {
-        if (showingBack) {
-            UIView.transitionFromView(back, toView: imageView, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
-        }
-        else {
-            UIView.transitionFromView(imageView, toView: back, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
-        }
-        showingBack = !showingBack
+    @IBAction func unwindToList (segue: UIStoryboardSegue) {
+        self.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
