@@ -14,10 +14,6 @@ class StudentViewController: UIViewController {
     
     var selectedPicture = 0
     
-    var cardView: UIView!
-    var back: UIImageView!
-    var showingBack = false
-    
     @IBOutlet var imageView: UIImageView!
     
     @IBOutlet var descView: UITextView!
@@ -26,12 +22,16 @@ class StudentViewController: UIViewController {
     
     override func viewDidLoad () {
         super.viewDidLoad()
+        
         var picName = self.classRosterItem.studentPic
         var nextImage = UIImage(named: picName)
         imageView.image = nextImage
+        
         var desc = self.classRosterItem.studentDesc
         descView.text = desc
+        
         self.view.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 235/255, alpha: 1.0)
+        
         if self.classRosterItem.isMe {
             isMeButton.hidden = false
         }

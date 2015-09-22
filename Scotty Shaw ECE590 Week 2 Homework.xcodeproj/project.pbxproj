@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6FAEA4491BAC949300268DEE /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEA4481BAC949300268DEE /* DrawingViewController.swift */; };
+		6FAEA44B1BAC9BFC00268DEE /* $.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FAEA44A1BAC9BFC00268DEE /* $.jpg */; };
+		6FAEA44D1BACA18E00268DEE /* basketball.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FAEA44C1BACA18E00268DEE /* basketball.png */; };
 		6FEB32521B9E9A8200F3D150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB32511B9E9A8200F3D150 /* AppDelegate.swift */; };
 		6FEB32541B9E9A8200F3D150 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB32531B9E9A8200F3D150 /* ViewController.swift */; };
 		6FEB32571B9E9A8200F3D150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEB32551B9E9A8200F3D150 /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		6FAEA4481BAC949300268DEE /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		6FAEA44A1BAC9BFC00268DEE /* $.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = $.jpg; sourceTree = SOURCE_ROOT; };
+		6FAEA44C1BACA18E00268DEE /* basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basketball.png; sourceTree = SOURCE_ROOT; };
 		6FEB324C1B9E9A8200F3D150 /* Scotty Shaw ECE590 Week 2 Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scotty Shaw ECE590 Week 2 Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FEB32501B9E9A8200F3D150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FEB32511B9E9A8200F3D150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 		6FEB324F1B9E9A8200F3D150 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6FAEA44C1BACA18E00268DEE /* basketball.png */,
+				6FAEA44A1BAC9BFC00268DEE /* $.jpg */,
 				6FEB32711B9E9ADD00F3D150 /* Allan Kiplagat.JPG */,
 				6FEB32721B9E9ADD00F3D150 /* Ashwin Kommajesula.JPG */,
 				6FEB32731B9E9ADD00F3D150 /* Austin Kyker.JPG */,
@@ -302,6 +308,7 @@
 				6FEB32A51B9E9ADD00F3D150 /* TC Dong.JPG in Resources */,
 				6FEB32961B9E9ADD00F3D150 /* Greg McKeon.JPG in Resources */,
 				6FEB32AC1B9E9ADD00F3D150 /* Zhuo Jia.JPG in Resources */,
+				6FAEA44B1BAC9BFC00268DEE /* $.jpg in Resources */,
 				6FEB32571B9E9A8200F3D150 /* Main.storyboard in Resources */,
 				6FEB32A71B9E9ADD00F3D150 /* Weidong Duan.JPG in Resources */,
 				6FEB32991B9E9ADD00F3D150 /* Hao Wu.JPG in Resources */,
@@ -317,6 +324,7 @@
 				6FEB32AA1B9E9ADD00F3D150 /* Xin Lu.JPG in Resources */,
 				6FEB328F1B9E9ADD00F3D150 /* Allan Kiplagat.JPG in Resources */,
 				6FEB329A1B9E9ADD00F3D150 /* Hong Jin.JPG in Resources */,
+				6FAEA44D1BACA18E00268DEE /* basketball.png in Resources */,
 				6FEB32921B9E9ADD00F3D150 /* Boyang Xu.JPG in Resources */,
 				6FEB32A31B9E9ADD00F3D150 /* Shuai Fu.JPG in Resources */,
 				6FEB32A91B9E9ADD00F3D150 /* Wenting Hu.JPG in Resources */,

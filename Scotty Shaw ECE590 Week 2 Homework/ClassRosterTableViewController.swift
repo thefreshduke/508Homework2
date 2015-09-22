@@ -42,111 +42,37 @@ class ClassRosterTableViewController: UITableViewController {
         "Shuai Yuan",
         "Ran Zhou"]
     
-    let studentTraits: [String] = [
-        "TC Dong",
-        "Shaoyi Han",
-        "Wenting Hu",
-        "Guoshan Liu",
-        "Ran Zhou"]
-    
-    let studentLocations = [
-        "Emmanuel Shiferaw" : "Ethiopia then North Carolina",
-        "Julien Mansier" : "Florida",
-        "Ashwin Kommajesula" : "India then New Jersey",
-        "Austin Kyker" : "Indiana",
-        "Allan Kiplagat": "Kenya",
-        "Chase Malik" : "Missouri",
-        "Greg McKeon" : "New York",
-        "Zachary Podbela" : "New York",
-        "TC Dong" : "South Africa",
-        "Scotty Shaw" : "Texas",
-        "Rahul Harikrishnan" : "Washington"]
-    
-    let studentDegrees = [
-        "TC Dong" : "Bachelors in Comp Sci",
-        "Scotty Shaw" : "Bachelors in Comp Sci",
-        "Rahul Harikrishnan" : "Bachelors in ECE",
-        "Julien Mansier" : "Bachelors in ECE",
-        "Allan Kiplagat" : "Bachelors in ECE and CS",
-        "Ashwin Kommajesula" : "Bachelors in ECE and CS",
-        "Austin Kyker" : "Bachelors in ECE and CS",
-        "Greg McKeon" : "Bachelors in ECE and CS",
-        "Zachary Podbela" : "Bachelors in ECE and CS",
-        "Emmanuel Shiferaw" : "Bachelors in ECE and CS",
-        "Chase Malik" : "Bachelors in ECE and CS and Math",
-        "Ran Zhou" : "Master of Engineering",
-        "Boyang Xu" : "Masters in ECE and CS"]
-    
-    let studentLanguages = [
-        "TC Dong" : "Java, C",
-        "Weidong Duan" : "Java, C++",
-        "Shuai Fu" : "C, Java",
-        "Shaoyi Han" : "C, C++",
-        "Rahul Harikrishnan" : "Java, Python",
-        "Wenting Hu" : "C, C++",
-        "Jingxiong Huang" : "C++, Python",
-        "Zhuo Jia" : "C++, Java",
-        "Deyu Jiao" : "Java, C++",
-        "Allan Kiplagat" : "Java, Ruby",
-        "Ashwin Kommajesula" : "Java, C",
-        "Austin Kyker" : "JavaScript, Java",
-        "Hao Li" : "C++, Java",
-        "Jiancheng Li" : "C, Java",
-        "Guoshan Liu" : "C++, Java",
-        "Mingming Lu" : "C, Java",
-        "Xin Lu" : "Go, C++",
-        "Hong Jin" : "C, C++",
-        "Chase Malik" : "Java, C",
-        "Julien Mansier" : "Java, C++",
-        "Greg McKeon" : "Java, JavaScript",
-        "Weichen Ning" : "C++, C",
-        "Zachary Podbela" : "Java, Python",
-        "Scotty Shaw" : "Java, Objective C",
-        "Emmanuel Shiferaw" : "Java, C#",
-        "Weiqi Wei" : "Java, C++",
-        "Hao Wu" : "Java, C",
-        "Boyang Xu" : "Java, C",
-        "Shuai Yuan" : "Java, C",
-        "Ran Zhou" : "Java, C"]
-    
-    let studentJobs = [
-        "TC Dong" : "IBM",
-        "Rahul Harikrishnan" : "Apptio",
-        "Zhuo Jia" : "Chinese start-up",
-        "Deyu Jiao" : "Chinese internship involving a cloud address book",
-        "Allan Kiplagat" : "Start-up",
-        "Ashwin Kommajesula" : "Quicken Loans",
-        "Austin Kyker" : "eBay",
-        "Xin Lu" : "Chinese start-up involving cloud computing",
-        "Chase Malik" : "Sporting Innovation",
-        "Julien Mansier" : "Auto industry",
-        "Greg McKeon" : "American Express",
-        "Weichen Ning" : "Cisco",
-        "Zachary Podbela" : "Capital One Labs",
-        "Scotty Shaw" : "HackWare, LLC",
-        "Emmanuel Shiferaw" : "DiVE",
-        "Hao Wu" : "Witricity Corporation",
-        "Boyang Xu" : "RA",
-        "Ran Zhou" : "Schneider Electrics in China"
-    ]
-    
-    let studentIdeas = [
-        "TC Dong" : "An education app",
-        "Weidong Duan" : "An app that helps people make friends and share interests",
-        "Shuai Fu" : "Maybe a game",
-        "Wenting Hu" : "An scheduling app using notifications to avoid procrastination",
-        "Jingxiong Huang" : "Maybe a game",
-        "Hao Li" : "Maybe a game",
-        "Jiancheng Li" : "An online system to share fantastic foods you had",
-        "Guoshan Liu" : "Maybe a game",
-        "Xin Lu" : "An expense tracking app",
-        "Hong Jin" : "An airfare search app",
-        "Julien Mansier" : "A BI Tool",
-        "Scotty Shaw" : "A modified Google map with weather display or a Dos Equis Alarm Clock",
-        "Emmanuel Shiferaw" : "An iPad app that connects with virtual reality experience",
-        "Weiqi Wei" : "An Apple Watch app",
-        "Shuai Yuan" : "Not a game!",
-        "Ran Zhou" : "A fitness app"
+    let information: [String] = [
+        "TC Dong is from South Africa and studies CS. Her best programming languages are C and Java, and she last worked at IBM. She enjoys violin and figure skating in her free time, and she wants to build an education app.",
+        "Weidong Duan is from China and studies ECE masters. His best programming languages are Java and C++, and he has never worked before. He enjoys swimming and movies in his free time, and he wants to build an app that helps people make friends and share interests.",
+        "Shuai Fu is from China and studies ECE masters. His best programming languages are C and Java, and he has never worked before. He enjoys table tennis and piano in his free time, and he wants to build maybe a game.",
+        "Shaoyi Han is from China and studies ECE masters. Her best programming languages are C and C++, and she has never worked before. She enjoys piano and dancing in her free time, and she does not have any app ideas yet.",
+        "Rahul Harikrishnan is from Washington and studies ECE. His best programming languages are Java and Python, and he last worked at Apptio. He enjoys cricket and hiking in his free time, and he does not have any app ideas yet.",
+        "Wenting Hu is from China and studies ECE masters. Her best programming languages are C and C++, and she has never worked before. She enjoys piano and computer games in her free time, and she wants to build a scheduling app using notifications to avoid procrastination.",
+        "Jingxiong Huang is from China and studies ECE masters. His best programming languages are C++ and Python, and he has never worked before. He enjoys swimming and mobile phone games in his free time, and he wants to build maybe a game.",
+        "Zhuo Jia is from China and studies ECE masters. His best programming languages are C++ and Java, and he last worked at a Chinese start-up. He enjoys cooking and photography in his free time, and he does not have any app ideas yet.",
+        "Deyu Jiao is from China and studies ECE masters. His best programming languages are Java and C++, and he last worked at a Chinese internship. He enjoys choir and piano in his free time, and he does not have any app ideas yet.",
+        "Allan Kiplagat is from Kenya and studies ECE/CS. His best programming languages are Java and Ruby, and he last worked at a start-up. He enjoys guitar and jogging in his free time, and he does not have any app ideas yet.",
+        "Ashwin Kommajesula is from New Jersey and studies ECE/CS. His best programming languages are Java and C, and he last worked at Quicken Loans. He enjoys violin and cooking in his free time, and he does not have any app ideas yet.",
+        "Austin Kyker is from Indiana and studies ECE/CS. His best programming languages are JavaScript and Java, and he last worked at eBay. He enjoys basketball and golf in his free time, and he does not have any app ideas yet.",
+        "Hao Li is from China and studies ECE masters. His best programming languages are C++ and Java, and he has never worked before. He enjoys basketball and movies in his free time, and he does not have any app ideas yet, maybe a game.",
+        "Jiancheng Li is from China and studies ECE masters. His best programming languages are C and Java, and he has never worked before. He enjoys swimming and computer games in his free time, and he wants to build an online system to share fantastic foods you had",
+        "Guoshan Liu is from China and studies ECE masters. Her best programming languages are C++ and Java, and she has never worked before. She enjoys piano and music in her free time, and she does not have any app ideas yet.",
+        "Mingming Lu is from China and studies ECE masters. His best programming languages are C and Java, and he has never worked before. He enjoys basketball and working out in his free time, and he does not have any app ideas yet.",
+        "Xin Lu is from China and studies ECE masters. His best programming languages are C++ and Go, and he last worked at a Chinese start-up. He enjoys running and table tennis in his free time, and he wants to build an expense tracking app.",
+        "Hong Jin is from China and studies ECE masters. His best programming languages are C and C++, and he has never worked before. He enjoys basketball and computer games in his free time, and he wants to build an airfare search app.",
+        "Chase Malik is from Missouri and studies ECE/CS/Math. His best programming languages are Java and C, and he last worked at Sporting Innovation. He enjoys video games and watching sports in his free time, and he does not have any app ideas yet.",
+        "Julien Mansier is from Florida and studies ECE. His best programming languages are C++ and Java, and he last worked in the auto industry. He enjoys football and brewing beer in his free time, and he wants to build a BI tool.",
+        "Greg McKeon is from New York and studies ECE/CS. His best programming languages are Java and JavaScript, and he last worked at American Express. He enjoys Netflix and baseball in his free time, and he does not have any app ideas yet.",
+        "Weichen Ning is from China and studies ECE masters. His best programming languages are C and C++, and he last worked at Cisco. He enjoys movies and badminton in his free time, and he does not have any app ideas yet.",
+        "Zachary Podbela is from New York and studies ECE/CS. His best programming languages are Java and Python, and he last worked at Capital One Labs. He enjoys music and flying in his free time, and he does not have any app ideas yet.",
+        "Scotty Shaw is from Texas and studies CS. His best programming languages are Java and Objective C, and he last worked at HackWare, LLC. He enjoys basketball and traveling in his free time, and he wants to build Google map with weather display or a Dos Equis Alarm Clock.",
+        "Emmanuel Shiferaw is from Ethiopia/Raleigh and studies ECE/CS. His best programming languages are Java and C#, and he last worked at the DiVE. He enjoys reading and football in his free time, and he wants to build an iPad app that connects with virtual reality experience.",
+        "Weiqi Wei is from China and studies ECE masters. His best programming languages are C++ and Java, and he has never worked before. He enjoys soccer and table tennis in his free time, and he wants to build an Apple Watch app.",
+        "Hao Wu is from China and studies ECE masters. His best programming languages are C and Java, and he last worked at Witricity Corporation. He enjoys tennis and movies in his free time, and he does not have any app ideas yet.",
+        "Boyang Xu is from China and studies CS masters. His best programming languages are C and Java, and he last worked at RA. He enjoys soccer and basketball in his free time, and he does not have any app ideas yet.",
+        "Shuai Yuan is from China and studies CS masters. His best programming languages are Java and C, and he has never worked before. He enjoys basketball and computer games in his free time, and he does not want to build a game!",
+        "Ran Zhou is from China and is studies Masters of Engineering. Her best programming languages are C and C++, and she last worked at Schneider Electrics in China. She enjoys violin and swimming in her free time, and she wants to build a fitness app."
     ]
     
     var classRosterItems = [ClassRosterItem]()
@@ -156,17 +82,10 @@ class ClassRosterTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadInitialData()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func unwindToList (segue: UIStoryboardSegue) {
@@ -174,27 +93,27 @@ class ClassRosterTableViewController: UITableViewController {
     }
     
     func loadInitialData() {
-        for student in students {
+        for i in 0...(students.count - 1) {
             var item = ClassRosterItem()
-            item.studentName = student
-            item.studentPic = "\(student).JPG"
-            item.studentDesc = ""
-            if student == "Scotty Shaw" {
+            item.studentName = students[i]
+            item.studentPic = "\(students[i]).JPG"
+            
+            item.studentDesc = "\(information[i])"
+            
+            if students[i] == "Scotty Shaw" {
                 item.isMe = true
             }
             self.classRosterItems.append(item)
         }
     }
     
+    
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
         return self.classRosterItems.count
     }
     
@@ -236,61 +155,8 @@ class ClassRosterTableViewController: UITableViewController {
         tappedItem.studentViewed = true
     }
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
         let studentDisplayNavigationController = segue.destinationViewController as! UINavigationController
         studentViewController = studentDisplayNavigationController.topViewController as! StudentViewController
     }
-    
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
-    
-    // Configure the cell...
-    
-    return cell
-    }
-    */
-    
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return NO if you do not want the specified item to be editable.
-    return true
-    }
-    */
-    
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    if editingStyle == .Delete {
-    // Delete the row from the data source
-    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-    } else if editingStyle == .Insert {
-    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }
-    }
-    */
-    
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-    
-    }
-    */
-    
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return NO if you do not want the item to be re-orderable.
-    return true
-    }
-    */
-    
-    /*
-    // MARK: - Navigation
-    
-    */
 }
